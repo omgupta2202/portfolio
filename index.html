@@ -12,7 +12,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" type="text/css" href="default.css">
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,10 +42,10 @@
                         <img id="profile-pic" src="images/profile.jpeg">
                         <h5 style="text-align: center; line-height: 0;">Personalized Theme</h5>
                         <div id="theme-options-wrapper">
-                            <div id="light-mode" class="theme-dot"></div>
-                            <div id="blue-mode" class="theme-dot"></div>
-                            <div id="green-mode" class="theme-dot"></div>
-                            <div id="purple-mode" class="theme-dot"></div>
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                         </div>
                         <p id="settings-note"> Theme id will be saved for<br> your next visit</p>
                     </div>
@@ -64,19 +65,53 @@
         </section>
         <section class="s2">
             <div class="main-container">
-                About
-            </div>
-        </section>
-        <section class="s1">
-            <div class="main-container">
-                Portfolio
+                <div class="about-wrapper">
+                    <div class="about-me">
+                        <h3>More about me</h3>
+                        <p>Hey, I am a 2nd Year Undergrad at KIET Group Of Institutions,Ghaziabad pursuing B-tech majoring in Computer Science Engineering.</p>
+
+                        <p>My goal is to create impact as a student, as a developer, as a teammate and to create and utilise more and more opportunities in my domain.</p>
+                    </div>
+                    <div class="social-links">
+                        <div>
+                            <h3>Languages and Framework:</h3>
+
+                            <p>Learning backend while focusing on Django.
+                            <a href="#"> Download Reusme</a></p>
+                        </div>
+                        <div id="skills">
+                            <ul>
+                                <li>Python</li>
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>Django</li>
+                            </ul>
+                            <ul>
+                                <li>Html</li>
+                                <li>CSS</li>
+                                <li>WebRTC</li>
+                                <li>Javascript</li>
+                            </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="s2">
             <div class="main-container">
-                Contact
+                <h3 style="text-align: center;">Get In Touch</h3>
+                <form id="contact-form">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email">
+                    <label>Message</label>
+                    <textarea class="input-field" type="text" name="message"></textarea>
+                    <input id="submit-btn" type="submit" value="Send">
+                </form>
             </div>
         </section>
-        <script src="" async defer></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
